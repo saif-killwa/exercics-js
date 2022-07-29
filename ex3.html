@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: #2A2F33;
+            gap: 40%;
+        }
+        .affichage1{
+            display: flex;
+            flex-direction: column;
+            background-color: #8C9491;
+            width: 300px;
+            height: 300px;
+            gap: 40px;
+            color: #2A2F33;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="affichage1">
+            <h2>affichage n1:</h2>
+            <p id="a"></p>
+            <p id="b"></p>
+            <p id="c"></p>
+        </div>
+        <div class="affichage1">
+            <h2>affichage n2:</h2>
+            <p id="aa"></p>
+            <p id="bb"></p>
+            <p id="cc"></p>
+        </div>
+    </div>
+    
+    <script>
+        let a="1"
+        let b="2"
+        let c="0"
+        c=+ a+b
+        document.getElementById('a').innerHTML= "a = "+a+ " : " +typeof(a)
+        document.getElementById('b').innerHTML= "b = "+b+ " : " +typeof(b)
+        document.getElementById('c').innerHTML= "c = "+c+ " : " +typeof(c)
+        /*console.log("a = "+a+ " " +typeof(a))
+        console.log("b = "+b+ " " +typeof(b))
+        console.log("c = "+c+ " " +typeof(c))*/
+        c=+ Number(a)+Number(b)
+        document.getElementById('aa').innerHTML= "a = "+a+ " : " +typeof(Number(a))
+        document.getElementById('bb').innerHTML= "b = "+b+ " : " +typeof(Number(b))
+        document.getElementById('cc').innerHTML= "c = "+c+ " : " +typeof(c)
+        /*console.log("a = "+a+ " " +typeof(Number(a)))
+        console.log("b = "+b+ " " +typeof(Number(b)))
+        console.log("c = "+c+ " " +typeof(Number(c)))*/
+        
+
+    </script>
+</body>
+</html>
